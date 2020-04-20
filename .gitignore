@@ -1,3 +1,6 @@
 node_modules/
 package-lock.json
 yarn.lock
+restbed
+.vscode/
+calculator_back-end/build/

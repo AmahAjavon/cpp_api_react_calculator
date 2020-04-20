@@ -24,17 +24,17 @@ const CalculatorPanel = (props) => {
     {text: "=", handler: () => props.equalClicked()},
   ];
   
-  const calc_buttons = buttons.map((value, index) => {
-    return <CalculatorButton 
+  const calc_buttons = buttons.map((value, key) => {
+    return <CalculatorButton key={key}
       caption={value.text} 
       onClick={value.handler} />
   });
 
   return(
-    <div className="calculator-grid-container">
+    <>
     <CalculatorDisplay text={props.result} />
       {calc_buttons}
-    </div>
+    </>
   );
 
 }
