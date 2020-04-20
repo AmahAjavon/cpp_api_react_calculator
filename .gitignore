@@ -3,4 +3,5 @@ package-lock.json
 yarn.lock
 restbed
 .vscode/
+.DS_Store
 calculator_back-end/build/
